@@ -1,0 +1,97 @@
+406 782 545
+
+246 820 072
+/SBW
+ ├── /src
+ │   ├── /components        # ✅ Reusable UI Components
+ │   │   ├── Button.js
+ │   │   ├── InputField.js
+ │   │   ├── Card.js
+ │   │   ├── QRScanner.js
+ │   │   ├── MapViewComponent.js
+ │   │   ├── InformationPortalModal.js
+ │   │
+ │   ├── /screens           # ✅ Screens (Pages)
+ │   │   ├── /Auth
+ │   │   │   ├── LoaderScreen.js
+ │   │   │   ├── LoginScreen.js
+ │   │   │   ├── CheckEligibility.js
+ │   │   │   ├── WithIdentt.js
+ │   │   │
+ │   │   ├── /Catalog
+ │   │   │   ├── ManageItemCatalogScreen.js
+ │   │   │
+ │   │   ├── /Main
+ │   │   │   ├── HomeScreen.js
+ │   │   │   ├── ProfileScreen.js
+ │   │   │   ├── SettingsScreen.js
+ │   │   │
+ │   │   ├── /Features
+ │   │   │   ├── QRScannerScreen.js
+ │   │   │   ├── CameraScreen.js
+ │   │   │   ├── MapScreen.js
+ │   │   │   ├── ListScreen.js
+ │   │   │   ├── StorageScreen.js
+ │   │   │
+ │   │   ├── NotFoundScreen.js
+ │   │
+ │   ├── /styles            # ✅ Centralized Styles
+ │   │   ├── homeStyles.js
+ │   │   ├── loginStyles.js
+ │   │   ├── eligibilityStyles.js
+ │   │   ├── commonStyles.js   # ✅ Shared styles used across multiple screens
+ │   │
+ │   ├── /navigation        # ✅ Navigation setup (React Navigation)
+ │   │   ├── AppNavigator.js
+ │   │   ├── AuthNavigator.js
+ │   │   ├── MainNavigator.js
+ │   │   ├── TabNavigator.js
+ │   │   ├── DrawerNavigator.js
+ │   │
+ │   ├── /hooks             # ✅ Custom Hooks (Reusable Logic)
+ │   │   ├── useAuth.js
+ │   │   ├── useLocation.js
+ │   │   ├── useCamera.js
+ │   │   ├── useStorage.js
+ │   │   ├── useFetch.js
+ │   │
+ │   ├── /context           # ✅ Context API & Redux Store
+ │   │   ├── store.js
+ │   │   ├── authSlice.js
+ │   │   ├── homeSlice.js  # ✅ Manages vendor-related data in Home Screen
+ │   │   ├── LocationContext.js
+ │   │
+ │   ├── /services          # ✅ API & Background Services
+ │   │   ├── api.js
+ │   │   ├── authService.js
+ │   │   ├── homeService.js  # ✅ Handles vendor API calls
+ │   │   ├── backgroundTask.js
+ │   │   ├── itemListAddService.js
+ │   │   ├── ItemListUpdateService.js
+ │   │
+ │   ├── /utils             # ✅ Helper Functions & Constants
+ │   │   ├── helpers.js
+ │   │   ├── validators.js
+ │   │   ├── constants.js
+ │   │   ├── permissions.js
+ │   │
+ │   ├── /config            # ✅ Configuration Files (Environment Variables)
+ │   │   ├── env.js  # ✅ Loads environment variables from `.env` file
+ │   │
+ │   ├── /assets            # ✅ Images, Icons, Fonts
+ │   │   ├── /images
+ │   │   │   ├── logo.png
+ │   │   │   ├── background.jpg
+ │   │   ├── /icons
+ │   │   │   ├── camera.png
+ │   │   │   ├── location.png
+ │   │   ├── /fonts
+ │   │       ├── OpenSans-Regular.ttf
+ │   │       ├── OpenSans-Bold.ttf
+ │   │
+ │   ├── .env               # ✅ Environment Variables (Sensitive Data)
+ │   ├── App.js             # Root Component
+ │   ├── index.js           # Entry Point
+ │
+ ├── package.json
+ ├── README.md
