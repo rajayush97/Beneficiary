@@ -3,7 +3,7 @@ import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
 import FirebaseCore
-Treat Warnings as Errors
+//Treat Warnings as Errors
 
 @main
 class AppDelegate: RCTAppDelegate {
